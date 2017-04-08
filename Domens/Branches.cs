@@ -13,5 +13,6 @@ namespace Domens
         public string City { get; set; }
         public string Phone { get; set; }
         public string Mail { get; set; }
+        public virtual List<Products> Products { get; set; }
     }
 }

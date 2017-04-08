@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domens
 {
-    class Manufacturer
+    public class Manufacturer
     {
         public string CompanyName { get; set; }
         public string ReviewsCompany { get; set; }

@@ -8,7 +8,6 @@ namespace Domens
 {
     public class Reviwes
     {
-//public virtual List<ListTheUser> User { get; set; }
         public int Evaluation { get; set; }
         public string Comment { get; set; }
         public string Time { get; set; }

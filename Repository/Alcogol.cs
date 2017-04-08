@@ -22,6 +22,10 @@
 
          public virtual DbSet<Products> Products { get; set; }
          public virtual DbSet<Basket> Basket { get; set; }
+         public virtual DbSet<Branches> Branches{ get; set; }
+         public virtual DbSet<ListTheUser> ListTheUser { get; set; }
+         public virtual DbSet<Manufacturer> Manufacturer { get; set; }
+         public virtual DbSet<Reviwes> Reviwes { get; set; }
     }
 
     //public class MyEntity

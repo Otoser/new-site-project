@@ -8,7 +8,6 @@ namespace Domens
 {
     public class Basket
     {
-      //  public virtual List<Products> Products { get; set; }
         public string DeliveryMethod { get; set; }
         public string DeliveryTime { get; set; }
         public string WhereToDeliver { get; set; }

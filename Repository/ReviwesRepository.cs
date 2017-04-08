@@ -7,24 +7,24 @@ using Domens;
 using System.Data.Entity;
 namespace Repository
 {
-    public interface IProductRepository
+    public interface IReviwesRepository
     {
-        IQueryable<Products> GetAll();
+        IQueryable<Reviwes> GetAll();
         void Save();
-        void Delete(Products entity);
-        void Add(Products entity);
+        void Delete(Reviwes entity);
+        void Add(Reviwes entity);
         void Update();
     }
-    public class ProductRepository : IProductRepository
+    public class ReviwesRepository : IReviwesRepository
     {
-        private readonly DbSet<Products> _entities;
+        private readonly DbSet<Reviwes> _entities;
         private readonly DbContext _context;
-        public ProductRepository(DbContext context)
+        public ReviwesRepository(DbContext context)
         {
             _context = context;
-            _entities = _context.Set<Products>();
+            _entities = _context.Set<Reviwes>();
         }
-        public IQueryable<Products> GetAll()
+        public IQueryable<Reviwes> GetAll()
         {
             return _entities.AsQueryable();
         }
@@ -32,17 +32,17 @@ namespace Repository
         {
             _context.SaveChanges();
         }
-        public void Delete(Products entity)
+        public void Delete(Reviwes entity)
         {
             _entities.Remove(entity);
         }
-        public void Add(Products entity)
+        public void Add(Reviwes entity)
         {
             _entities.Add(entity);
         }
         public void Update()
         {
-           _context.SaveChanges();
+            _context.SaveChanges();
         }
     }
 }
