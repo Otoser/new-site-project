@@ -45,13 +45,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domens\Domens.csproj">
+    <ProjectReference Include="..\Domens\AlcogolDomain.csproj">
       <Project>{7d0d00b5-370d-4093-99a6-efea548a4cb8}</Project>
-      <Name>Domens</Name>
+      <Name>AlcogolDomain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Repository\Repository.csproj">
+    <ProjectReference Include="..\Repository\AlcogolRepository.csproj">
       <Project>{c6fe9257-6836-4a33-b412-3d7ad1905674}</Project>
-      <Name>Repository</Name>
+      <Name>AlcogolRepository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

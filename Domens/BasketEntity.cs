@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domens
+﻿using System.Collections.Generic;
+namespace AlcogolDomain
 {
-    public class Basket
+    public class BasketEntity:BaseEntity
     {
         public string DeliveryMethod { get; set; }
         public string DeliveryTime { get; set; }

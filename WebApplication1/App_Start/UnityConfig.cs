@@ -2,7 +2,7 @@ using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 using Unity.Mvc5;
 using System.Data.Entity;
-using Repository;
+using AlcogolRepository;
 
 namespace WebApplication1
 {

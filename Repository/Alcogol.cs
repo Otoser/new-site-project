@@ -1,9 +1,9 @@
-﻿namespace Repository
+﻿namespace AlcogolRepository
 {
     using System;
     using System.Data.Entity;
     using System.Linq;
-    using Domens;
+    using AlcogolDomain;
     public class Alcogol : DbContext
     {
         // Контекст настроен для использования строки подключения "Alcogol" из файла конфигурации  
@@ -20,12 +20,12 @@
         // Добавьте DbSet для каждого типа сущности, который требуется включить в модель. Дополнительные сведения 
         // о настройке и использовании модели Code First см. в статье http://go.microsoft.com/fwlink/?LinkId=390109.
 
-         public virtual DbSet<Products> Products { get; set; }
-         public virtual DbSet<Basket> Basket { get; set; }
-         public virtual DbSet<Branches> Branches{ get; set; }
-         public virtual DbSet<ListTheUser> ListTheUser { get; set; }
-         public virtual DbSet<Manufacturer> Manufacturer { get; set; }
-         public virtual DbSet<Reviwes> Reviwes { get; set; }
+         public virtual DbSet<ProductsEntity> Products { get; set; }
+         public virtual DbSet<BasketEntity> Basket { get; set; }
+         public virtual DbSet<BranchesEntity> Branches{ get; set; }
+         public virtual DbSet<ListTheUserEntity> ListTheUser { get; set; }
+         public virtual DbSet<ManufacturerEntity> Manufacturer { get; set; }
+         public virtual DbSet<ReviwesEntity> Reviwes { get; set; }
     }
 
     //public class MyEntity
